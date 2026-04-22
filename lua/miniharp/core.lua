@@ -132,6 +132,11 @@ end
 
 -- ---- public API ----
 
+---Go to specific mark
+function M.go_to(i)
+  jump_to(i)
+end
+
 ---Add or update a file mark for current buffer.
 function M.add_file()
     local file = utils.bufname()
